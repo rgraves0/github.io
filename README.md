@@ -7,7 +7,7 @@
 - 🔭 I’m currently working on **Freelancer**
 
 - 👯 Technology can help **Good Socitey**
-- 
+
 - 🤝 So what should we do ? **Sharing is caring**
 
 - 💬 This Area is  **Techspace😍🙌**
