@@ -1,20 +1,58 @@
-![logo](https://github.com/rgraves0/rgraves0/blob/main/bogdan-mb0sco-coffeeanim.gif)
-<h1 align="center">Hi 👋, I'm Ryan</h1>
-<h3 align="center">I am currently Freelancer 🙄🥴</h3>
-<img align="right" alt="cdoing" width="400" src="https://cdn.dribbble.com/users/4055494/screenshots/15215756/media/d2b66c4ca0192aa26d103448b3d1518b.gif">
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=kchocho&label=Profile%20views&color=0e75b6&style=flat" alt="kchocho" /> </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tech Site</h1>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="content">
+            <h2>Latest Tech News</h2>
+            <p>Here you can add your tech news content...</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+styles.css:
 
-- 🔭 I’m currently working on **secret project**
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-- 👯 I’m looking to collaborate on **my team**
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
 
-- 🤝 I’m looking for help with **My Old Project**
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+}
 
-- 💬 Ask me about **🙏💙❤️😍🙌**
+header.dark-mode {
+    background-color: #1f1f1f;
+}
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+script.js:
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+document.getElementById('theme-toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    document.querySelector('header').classList.toggle('dark-mode');
+});
